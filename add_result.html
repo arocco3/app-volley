@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Risultati partite</title>
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body class="bg-light">
+    <div class="container mt-4">
+        <button style="border-width: 0; height: 50px; font-size: 20px;"><i class="fa-solid fa-house"></i> Torna alla home</button>
+        <h1 class="text-center"><i class="fa-solid fa-plus"></i> Aggiungi risultato</h1>
+        
+        <!-- Tabella per visualizzare le partite        potrebbero essere cliccabili e poi si apre un pop up per inserire il punteggio -->
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Squadra 1</th>
+                    <th>Squadra 2</th>
+                    <th>Punteggio</th>
+                    <th>Ora</th>
+                </tr>
+            </thead>
+            <tbody id="resultsTable">
+                <tr><td colspan="4" class="text-center">Caricamento...</td></tr>
+                <tr><td colspan="4" class="text-center">Caricamento...</td></tr>
+                <tr><td colspan="4" class="text-center">Caricamento...</td></tr>
+            </tbody>
+        </table>
